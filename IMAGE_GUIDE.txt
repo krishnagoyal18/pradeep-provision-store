@@ -1,0 +1,24 @@
+PRadeep Provision Store - Product Images Guide
+
+HOW TO ADD MORE PRODUCT PHOTOS
+1. Open the images folder.
+2. Put your product photo inside it.
+3. Rename the photo using the product name in lowercase with hyphens.
+   Examples:
+      Surf Excel -> surf-excel.jpg
+      Dettol Handwash -> dettol-handwash.png
+      Madhusudhan Ghee -> madhusudhan-ghee.webp
+      Biscuits - All Types -> biscuits-all-types.jpg
+4. Refresh the website.
+
+The website automatically tries PNG, JPG, JPEG and WEBP.
+Some products also have alternate names/aliases built in.
+
+IMPORTANT:
+- The filename must match a product name/alias.
+- Simply putting a completely random filename in the folder cannot tell
+  the browser which product it belongs to.
+- Existing custom photos (Lays, Tedha Medha, Crax, Chakkar Kate, Anpoorna,
+  Daal, Galaxy Rice, Chini, Falato, Haldiram) are already connected.
+
+The current website keeps the existing JS/order/cart code.

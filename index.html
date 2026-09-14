@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Pradeep Provision Store, Main Bazar Barla, Muzaffarnagar. Grocery, snacks, stationery, household and daily-use products.">
+<title>Pradeep Provision Store | Main Bazar, Barla</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="topbar"><div class="container topbar-inner"><span>📍 Main Bazar, Barla, Muzaffarnagar</span><span>🛍️ Order list ready • Shop se pickup • Home delivery available nahi hai</span></div></div>
+
+<header class="navbar">
+<div class="container nav-inner">
+<a href="#home" class="logo"><span>PP</span><div>Pradeep <b>Provision Store</b></div></a>
+<button class="menu-btn" id="menuBtn">☰</button>
+<nav id="navLinks"><a href="#home">Home</a><a href="#categories">Categories</a><a href="#products">Products</a><a href="#gallery">Gallery</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+</div>
+</header>
+
+<main>
+<section id="home" class="hero">
+<div class="hero-image"><img src="images/shop-1.jpg" alt="Pradeep Provision Store front"></div>
+<div class="hero-overlay"></div>
+<div class="container hero-content">
+<div class="hero-copy">
+<div class="badge">LOCAL • TRUSTED • DAILY ESSENTIALS</div>
+<h1>Ghar ki zaroorat,<br><span>ek hi jagah.</span></h1>
+<p>Pradeep Provision Store par grocery, snacks, daal, rice, masale, stationery, household items aur daily-use products milte hain.</p>
+<div class="hero-actions"><a href="#products" class="btn primary">🛒 Products Dekhein</a><a href="#contact" class="btn glass">📍 Shop Details</a></div>
+</div>
+<div class="hero-info">
+<div class="mini-label">PRADEEP PROVISION STORE</div>
+<h3>Shop par aaiye,<br>jo chahiye le jaiye.</h3>
+<div class="hero-timing"><div><span>☀️ Summer</span><strong>5:30 AM – 8:30 PM</strong></div><div><span>❄️ Winter</span><strong>6:15 AM – 8:00 PM</strong></div></div>
+</div>
+</div>
+</section>
+
+<section class="quick-strip"><div class="container quick-grid">
+<div><span>01</span><b>Daily Essentials</b><small>Rozmarra ka zaroori saman</small></div>
+<div><span>02</span><b>Order & Pickup</b><small>List bhejo, saman ready karwao</small></div>
+<div><span>03</span><b>Local Store</b><small>Main Bazar, Barla mein</small></div>
+</div></section>
+
+<section id="categories" class="section"><div class="container">
+<div class="section-head left"><div><p class="eyebrow">SHOP BY CATEGORY</p><h2>Sab kuch organized.</h2></div><p>Apni category select karke products jaldi dhoondhein.</p></div>
+<div id="categoryGrid" class="category-grid"></div>
+</div></section>
+
+<section class="price-guide section"><div class="container price-guide-box">
+<div><p class="eyebrow">PRICE GUIDE</p><h2>Common items ke rates</h2><p>Website par wahi rates dikhaye gaye hain jo abhi confirm hain. Pack/size ke hisaab se price change ho sakta hai.</p></div>
+<div class="price-chips"><span>🥔 Chips: ₹5 se</span><span>🥜 Namkeen: ₹5 / ₹10 / ₹50 / ₹60 / ₹100 packs</span><span>🧺 Surf: ₹10 / ₹40 / ₹80+ sizes</span><span>🍚 Chini: ₹55/kg</span><span>🌾 Bura: ₹55/kg</span><span>🌾 Besan: ₹100/kg</span><span>🌾 Aata: 10kg ₹350</span><span>📦 Dilbag: ₹5 se</span></div>
+<div class="price-note">💡 Baaki products ke liye <b>“Shop par price”</b> likha hai — final price counter par confirm hoga.</div>
+</div></section>
+
+<section id="products" class="section products-section"><div class="container">
+<div class="section-head left product-heading"><div><p class="eyebrow">PRODUCTS</p><h2>Store ke products</h2><p>Actual product images + available pack/size price guide. Exact rate jahan confirm nahi hua hai, wahan “Shop par price” diya gaya hai.</p></div>
+<button class="cart-pill" id="openCartBtn">🛒 <span id="cartCount">0</span> items <i>View Order</i></button></div>
+<div class="catalog-toolbar"><div id="catalogBreadcrumb" class="catalog-breadcrumb"></div><div class="controls"><label class="searchbox">⌕<input id="searchInput" type="search" placeholder="Current products search karein..."></label><select id="categoryFilter"><option value="all">All Categories</option></select></div></div>
+<div id="productGrid" class="product-grid catalog-grid"></div><p id="noProducts" class="empty hidden">Koi product nahi mila. Search/category change karke dekhein.</p>
+</div></section>
+
+<section class="order-banner"><div class="container order-box"><div><p class="eyebrow">EASY ORDERING</p><h2>Saman ki list bhejo, shop se pickup karo.</h2><p>Cart mein items add karein. WhatsApp order se list bhejne ke baad shop se saman pickup karein.</p></div><button class="btn light" id="openCartBtn2">🛒 Order List</button></div></section>
+
+<section id="gallery" class="section"><div class="container">
+<div class="section-head left"><div><p class="eyebrow">OUR SHOP</p><h2>Asli dukaan, asli vibe.</h2></div><p>Pradeep Provision Store ki real photos.</p></div>
+<div class="gallery-grid">
+<figure class="gallery-main"><img src="images/shop-1.jpg" alt="Store front"><figcaption>Pradeep Provision Store</figcaption></figure>
+<figure><img src="images/shop-2.jpg" alt="Store interior snacks"><figcaption>Snacks & daily items</figcaption></figure>
+<figure><img src="images/shop-3.jpg" alt="Store shelves"><figcaption>Store shelves</figcaption></figure>
+<figure><img src="images/shop-4.jpg" alt="Shop exterior"><figcaption>Shop exterior</figcaption></figure>
+<figure><img src="images/shop-5.jpg" alt="Shop front view"><figcaption>Main entrance</figcaption></figure>
+</div></div></section>
+
+<section id="about" class="section about-section"><div class="container about-grid">
+<div class="about-image"><img src="images/shop-4.jpg" alt="Pradeep Provision Store exterior"></div>
+<div><p class="eyebrow">ABOUT THE STORE</p><h2>Pradeep Provision Store</h2>
+<p>Pradeep Goyal ki local provision store, Main Bazar Barla mein. Yahan grocery aur daily-use se lekar snacks, stationery, cleaning products aur household essentials tak kai zaroori items milte hain.</p>
+<div class="owner-card"><div class="owner-icon">P</div><div><small>STORE OWNER</small><strong>Pradeep Goyal</strong></div></div></div>
+</div></section>
+
+<section id="contact" class="section contact-section"><div class="container">
+<div class="section-head"><p class="eyebrow">VISIT US</p><h2>Shop par milte hain 👋</h2><p>Main Bazar, Barla, Muzaffarnagar</p></div>
+<div class="contact-grid">
+<div class="contact-card"><span>📍</span><h3>Location</h3><p>Main Bazar, Barla, Muzaffarnagar</p><a href="https://maps.app.goo.gl/prXV9gSgewkCVR3X6" target="_blank">Google Maps par dekhein →</a></div>
+<div class="contact-card"><span>⏰</span><h3>Timings</h3><p><b>Summer:</b> 5:30 AM – 8:30 PM</p><p><b>Winter:</b> 6:15 AM – 8:00 PM</p></div>
+<div class="contact-card"><span>🛍️</span><h3>Order & Pickup</h3><p>Order list ready karwa sakte hain.</p><p><b>Home delivery:</b> Available nahi hai.</p></div>
+</div>
+<div class="map-action"><a class="btn primary" href="https://maps.app.goo.gl/prXV9gSgewkCVR3X6" target="_blank">📍 Directions on Google Maps</a></div>
+</div></section>
+</main>
+
+<footer><div class="container footer-inner"><div><a class="footer-logo" href="#home">PP</a><div><h3>Pradeep Provision Store</h3><p>Main Bazar, Barla, Muzaffarnagar</p></div></div><p>© <span id="year"></span> Pradeep Provision Store</p></div></footer>
+
+<div id="cartOverlay" class="overlay hidden"><div class="cart-modal"><button class="close-btn" id="closeCartBtn">×</button><p class="eyebrow">ORDER LIST</p><h2>Your Order</h2><p class="muted">Quantity check karke WhatsApp par list bhejein.</p><div id="cartItems"></div><div class="cart-total"><span>Estimated Total</span><strong id="cartTotal">₹0</strong></div><div class="cart-actions"><button class="btn secondary" id="clearCartBtn">Clear</button><button class="btn whatsapp" id="whatsappBtn">WhatsApp Order</button></div><p class="small-note">WhatsApp number script.js mein add karna hai.</p></div></div>
+<script src="script.js"></script>
+</body></html>
