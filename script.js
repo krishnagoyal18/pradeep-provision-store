@@ -291,14 +291,36 @@ function normalizeImageName(text){
 }
 
 function getImageCandidates(productName){
-  const candidates=[];
-  if(IMG[productName]) candidates.push(...IMG[productName]);
-  const names=[normalizeImageName(productName),...(IMAGE_ALIASES[productName]||[])];
-  names.forEach(name=>["png","jpg","jpeg","webp"].forEach(ext=>{
-    const path=`images/${name}.${ext}`;
-    if(!candidates.includes(path)) candidates.push(path);
-  }));
-  return candidates;
+  const candidates = [];
+
+  if(IMG[productName]){
+    candidates.push(...IMG[productName]);
+  }
+
+  const aliases = IMAGE_ALIASES[productName] || [];
+
+  const names = [
+    productName,
+    normalizeImageName(productName),
+    productName.replace(/\s+/g, "-"),
+    productName.replace(/\s+/g, "_"),
+    ...aliases
+  ];
+
+  names.forEach(name => {
+    if(!name) return;
+
+    const clean = String(name).trim();
+
+    ["png","jpg","jpeg","webp"].forEach(ext => {
+      const path = `images/${clean}.${ext}`;
+      if(!candidates.includes(path)){
+        candidates.push(path);
+      }
+    });
+  });
+
+  return [...new Set(candidates)];
 }
 
 function imageTagFor(name, alt=name){
