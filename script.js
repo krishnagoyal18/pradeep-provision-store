@@ -26,7 +26,7 @@ const IMG = {
 };
 
 const IMAGE_ALIASES={
-  "Soap - All Types":["soap-all-types","soaps","soap"],
+  "Soap - All Types":["Soap-All-Types"],
   "No.1 Soap":["no-1-soap","no1-soap","no-1"],
   "Lifebuoy Soap":["lifebuoy-soap","lifebuoy"],
   "Lux Soap":["lux-soap","lux"],
@@ -48,7 +48,7 @@ const IMAGE_ALIASES={
   "Black Hair Color":["black-hair-color"],
   "Burgundy Color":["burgundy-color","burgunddi-color"],
   "Vaseline":["vaseline"],
-  "Bajaj Tel":["bajaj-tel","bajaj-oil"],
+  "Bajaj Tel":["images/Bajaj-Tel.png"],
   "Navratna Tel":["navratna-tel","navratan-tel"],
   "Navratna Powder":["navratna-powder","navratan-powder"],
   "Amla Tel":["amla-tel","amla-oil"],
@@ -560,8 +560,25 @@ function productImageCandidates(product){
   return [...new Set(out)];
 }
 function imageHTML(product){
-  const candidates=productImageCandidates(product);
-  return `<div class="product-media"><img loading="lazy" src="${candidates[0]}" data-candidates='${JSON.stringify(candidates).replace(/'/g,"&#39;")}' alt="" onerror="window.swapCatalogImage(this)"><div class="product-icon fallback"></div></div>`;
+  let imagePath = "";
+
+  if(product.name === "Bajaj Tel"){
+    imagePath = "images/Bajaj-Tel.png";
+  }
+
+  if(imagePath){
+    return `
+      <div class="product-media">
+        <img src="${imagePath}" alt="${product.name}">
+      </div>
+    `;
+  }
+
+  return `
+    <div class="product-media">
+      <div class="product-icon fallback"></div>
+    </div>
+  `;
 }
 function productCard(product){
   const pseudoIndex=encodeURIComponent(product.name);
